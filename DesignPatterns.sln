@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj", "{50CA185B-2576-4AC7-AADF-E5AC3223BD39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{86A23B70-F318-43AF-B5BB-7A3DA6EA3B6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{50CA185B-2576-4AC7-AADF-E5AC3223BD39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50CA185B-2576-4AC7-AADF-E5AC3223BD39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50CA185B-2576-4AC7-AADF-E5AC3223BD39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A23B70-F318-43AF-B5BB-7A3DA6EA3B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A23B70-F318-43AF-B5BB-7A3DA6EA3B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A23B70-F318-43AF-B5BB-7A3DA6EA3B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A23B70-F318-43AF-B5BB-7A3DA6EA3B6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
