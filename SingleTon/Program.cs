@@ -31,7 +31,7 @@ namespace SingleTon
         }
     }
 
-    //
+    
     class Computer
     {
         public OpSystem Os { get; set; }

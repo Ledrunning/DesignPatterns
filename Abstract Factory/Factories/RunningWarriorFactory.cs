@@ -7,7 +7,7 @@ using Abstract_Factory.Weapons;
 namespace Abstract_Factory.Factories
 {
     // Класс абстрактной фабрики создания бегущего героя с мечом
-    class RunningWarrior : HeroFactory
+    class RunningWarriorFactory : HeroFactory
     {
         public override Movement CreateMovement()
         {

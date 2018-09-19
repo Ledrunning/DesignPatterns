@@ -24,7 +24,7 @@ namespace Abstract_Factory
             elf.Run();
 
             // Создаем нашего героя с бегающего мечом
-            Hero runningWarrior = new Hero(new RunningWarrior());
+            Hero runningWarrior = new Hero(new RunningWarriorFactory());
             runningWarrior.Hit();
             runningWarrior.Run();
 
