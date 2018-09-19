@@ -15,7 +15,7 @@ namespace FactoryMethod
     /// в нее можно легко вводить новые классы, объекты которых система должна создавать.
     /// - Когда создание новых объектов необходимо делегировать из базового класса классам наследникам
     /// </summary>
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
