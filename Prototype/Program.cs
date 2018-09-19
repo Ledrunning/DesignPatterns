@@ -1,4 +1,5 @@
 ﻿using System;
+using Prototype.Figures;
 
 namespace Prototype
 {
@@ -30,54 +31,6 @@ namespace Prototype
             clonedFigure.GetInfo();
 
             Console.ReadKey();
-        }
-    }
-
-    interface IFigure
-    {
-        IFigure Clone();
-        void GetInfo();
-    }
-
-    class Rectangle : IFigure
-    {
-        private int _width;
-        private int _height;
-
-        public Rectangle(int width, int height)
-        {
-            _width = width;
-            _height = height;
-        }
-
-        public IFigure Clone()
-        {
-            return new Rectangle(_width, _height);
-        }
-
-        public void GetInfo()
-        {
-            Console.WriteLine($"Прямоугольник длиной {_height} и шириной {_width}");
-        }
-    }
-
-    class Circle : IFigure
-    {
-        private int _radius;
-
-        public Circle(int radius)
-        {
-            _radius = radius;
-        }
-
-        public IFigure Clone()
-        {
-            return new Circle(_radius);
-        }
-
-        public void GetInfo()
-        {
-            Console.WriteLine($"Круг радиусом {_radius}");
         }
     }
 }

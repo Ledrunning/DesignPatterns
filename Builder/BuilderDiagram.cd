@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Builder.Builders.BreadBuilder" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAEAAgAAAAAAAAAACAAAgA=</HashCode>
+      <FileName>Builders\BreadBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Builder.Builders.RyeBreadBuilder">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Builders\RyeBreadBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Builder.Builders.WheatBreadBuilder">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Builders\WheatBreadBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Builder.Ingredients.Additives">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ingredients\Additives.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Builder.Ingredients.Flour">
+    <Position X="11.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ingredients\Flour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Builder.Ingredients.Salt">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ingredients\Salt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Builder.Baker">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Baker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Builder.Bread">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAkAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bread.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Additives" />
+      <Property Name="Salt" />
+      <Property Name="Flour" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Builder.Program">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

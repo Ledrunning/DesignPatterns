@@ -30,45 +30,4 @@ namespace Strategy
             Console.ReadKey();
         }
     }
-
-    interface IMovable
-    {
-        void Move();
-    }
-
-    class PetrolMove : IMovable
-    {
-        public void Move()
-        {
-            Console.WriteLine("Едем на бензине");
-        }
-    }
-
-    class ElectricMove : IMovable
-    {
-        public void Move()
-        {
-            Console.WriteLine("Едем на электричестве");
-        }
-    }
-
-    class Car
-    {
-        protected int passengers;
-        protected string model;
-        
-        public IMovable Movable { private get; set; }
-
-        public Car(int num, string model, IMovable move)
-        {
-            passengers = num;
-            this.model = model;
-            Movable = move;
-        }
-
-        public void Move()
-        {
-            Movable.Move();
-        }
-    }
 }

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SingleTon.Computer">
+    <Position X="1.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Computer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Os" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SingleTon.OpSystem">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <AssociationLine Name="instance" Type="SingleTon.OpSystem" ManuallyRouted="true">
+      <Path>
+        <Point X="4.032" Y="2.747" />
+        <Point X="4.032" Y="3.55" />
+        <Point X="4.478" Y="3.55" />
+        <Point X="4.478" Y="2.747" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OpSystem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SingleTon.Program">
+    <Position X="1.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

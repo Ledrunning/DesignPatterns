@@ -1,4 +1,6 @@
 ﻿using System;
+using FactoryMethod.Developers;
+using FactoryMethod.Houses;
 
 namespace FactoryMethod
 {
@@ -13,7 +15,7 @@ namespace FactoryMethod
     /// в нее можно легко вводить новые классы, объекты которых система должна создавать.
     /// - Когда создание новых объектов необходимо делегировать из базового класса классам наследникам
     /// </summary>
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -30,72 +32,6 @@ namespace FactoryMethod
             House woodHouse = developer.Create();
 
             Console.ReadKey();
-        }
-
-        abstract class House
-        {
-
-        }
-
-        // Строительная компания
-        abstract class Developer
-        {
-            public string Name { get; set; }
-
-            public Developer(string name)
-            {
-                Name = name;
-            }
-
-            public abstract House Create();
-        }
-
-        /// <summary>
-        /// Классы строительных компаний
-        /// </summary>
-        /// <param name="args"></param>
-        class PanelDeveloper : Developer
-        {
-            public PanelDeveloper(string name) : base(name)
-            {
-            }
-
-            public override House Create()
-            {
-                return new PanelHouse();
-            }
-        }
-
-        class WoodDeveloper : Developer
-        {
-            public WoodDeveloper(string name) : base(name)
-            {
-            }
-
-            public override House Create()
-            {
-                return new WoodHouse();
-            }
-        }
-
-        /// <summary>
-        /// Классы видов домов
-        /// </summary>
-        /// <param name="args"></param>
-        class PanelHouse : House
-        {
-            public PanelHouse()
-            {
-                Console.WriteLine("Панельный дом построен");
-            }
-        }
-
-        class WoodHouse : House
-        {
-            public WoodHouse()
-            {
-                Console.WriteLine("Деревянный дом построен");
-            }
         }
 
     }

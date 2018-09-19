@@ -31,38 +31,4 @@ namespace SingleTon
         }
     }
 
-    //
-    class Computer
-    {
-        public OpSystem Os { get; set; }
-
-        public void Launch(string osName)
-        {
-            Os = OpSystem.GetInstance(osName);
-        }
-    }
-
-    class OpSystem
-    {
-        private static OpSystem instance;
-
-        public string Name { get; private set; }
-
-        protected OpSystem(string name)
-        {
-            this.Name = name;
-        }
-
-        public static OpSystem GetInstance(string name)
-        {
-            if (instance == null)
-            {
-                instance = new OpSystem(name);
-            }
-
-            return instance;
-        }
-    }
-
-
 }
