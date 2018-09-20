@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mediator.Colleague" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Colleagues\Colleague.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediator.CustomerColleague" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Colleagues\CustomerColleague.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediator.MediatorManager">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAEAAQAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Colleagues\MediatorManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="Programmer" />
+      <Property Name="Tester" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mediator.ProgrammerColleague" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Colleagues\ProgrammerColleague.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediator.TesterColleague" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Colleagues\TesterColleague.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediator.Mediator" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mediator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediator.Program" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
