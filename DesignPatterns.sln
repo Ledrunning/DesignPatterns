@@ -31,11 +31,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interpreter", "Interpreter\Interpreter.csproj", "{E97C6D15-D36A-4D83-AF74-715D13AFE8B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediator.csproj", "{F03D781E-BED3-493F-AE63-313105A4BB31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "Mediator\Mediator.csproj", "{F03D781E-BED3-493F-AE63-313105A4BB31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{AF86D73F-E82F-4517-9440-289797D9E4D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memento", "Memento\Memento.csproj", "{AF86D73F-E82F-4517-9440-289797D9E4D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{D10C39DA-F41A-4FBB-97FD-E40040B9FD78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visitor", "Visitor\Visitor.csproj", "{D10C39DA-F41A-4FBB-97FD-E40040B9FD78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{1EE863EF-84A9-4837-860F-6D086587E91A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{D10C39DA-F41A-4FBB-97FD-E40040B9FD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D10C39DA-F41A-4FBB-97FD-E40040B9FD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D10C39DA-F41A-4FBB-97FD-E40040B9FD78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE863EF-84A9-4837-860F-6D086587E91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE863EF-84A9-4837-860F-6D086587E91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE863EF-84A9-4837-860F-6D086587E91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE863EF-84A9-4837-860F-6D086587E91A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
