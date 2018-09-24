@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Visitor
 {
-    public interface IVisitor
+    public interface IAccount
     {
-        void VisitPersonAccount(Person account);
-        void VisitCompanyAcount(Company account);
+        void Accept(IVisitor visitor);
     }
 }

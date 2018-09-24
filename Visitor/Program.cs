@@ -19,7 +19,6 @@ namespace Visitor
             Console.Title = "Visitor";
 
             
-
             Console.ReadKey();
         }
     }
