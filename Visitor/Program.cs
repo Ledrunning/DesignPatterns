@@ -18,6 +18,12 @@ namespace Visitor
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Title = "Visitor";
 
+            var struture = new Bank();
+            struture.Add(new Person{Name = "Вася пупкин", Number = "812233652"});
+            struture.Add(new Company() {Name = "Microsoft", RegNumber = "ewuir85669", Number = "322567268" });
+
+            struture.Accept(new HtmlVisitor());
+            struture.Accept(new XmlVisitor());
             
             Console.ReadKey();
         }
