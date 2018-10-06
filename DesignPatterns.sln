@@ -45,7 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "StreamRefreshTimeout\Composite.csproj", "{A468738D-8D08-4290-9B4C-ADD8E5E46B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{A9694248-8DE4-499A-B135-518991CB5ED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Proxy\Proxy.csproj", "{A9694248-8DE4-499A-B135-518991CB5ED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{43B9E9F1-B835-4218-BC46-4C95686B412D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "Flyweight\Flyweight.csproj", "{B0E8502A-8498-43F2-8991-798411FA7996}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +145,14 @@ Global
 		{A9694248-8DE4-499A-B135-518991CB5ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9694248-8DE4-499A-B135-518991CB5ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9694248-8DE4-499A-B135-518991CB5ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B9E9F1-B835-4218-BC46-4C95686B412D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B9E9F1-B835-4218-BC46-4C95686B412D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B9E9F1-B835-4218-BC46-4C95686B412D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B9E9F1-B835-4218-BC46-4C95686B412D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E8502A-8498-43F2-8991-798411FA7996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E8502A-8498-43F2-8991-798411FA7996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E8502A-8498-43F2-8991-798411FA7996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E8502A-8498-43F2-8991-798411FA7996}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
