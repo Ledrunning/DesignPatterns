@@ -43,7 +43,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{B1F1E15D-82F5-4BC2-8DA4-82AEC680EA54}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "StreamRefreshTimeout\Composite.csproj", "{A468738D-8D08-4290-9B4C-ADD8E5E46B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{A468738D-8D08-4290-9B4C-ADD8E5E46B88}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Proxy\Proxy.csproj", "{A9694248-8DE4-499A-B135-518991CB5ED4}"
 EndProject
