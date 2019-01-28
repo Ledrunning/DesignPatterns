@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bridge.CPPLanguage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Languages\CPPLanguage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bridge.CSharpLanguage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Languages\CSharpLanguage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bridge.CorporateProgrammer" Collapsed="true">
+    <Position X="7.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Programmers\CorporateProgrammer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bridge.FreelanceProgrammer" Collapsed="true">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Programmers\FreelanceProgrammer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bridge.Programmer" Collapsed="true">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAQAAAgAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Programmers\Programmer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bridge.Program" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Bridge.ILanguage" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILanguage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
