@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Proxy;
+using Proxy.Repository;
 
 namespace Proxy.Migrations
 {
@@ -18,7 +18,7 @@ namespace Proxy.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Proxy.Page", b =>
+            modelBuilder.Entity("Proxy.Repository.Page", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Proxy;
+using Proxy.Repository;
 
 namespace Proxy.Migrations
 {
     [DbContext(typeof(PageContext))]
-    [Migration("20181006063012_Proxy")]
-    partial class Proxy
+    [Migration("20190611103912_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,7 +20,7 @@ namespace Proxy.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Proxy.Page", b =>
+            modelBuilder.Entity("Proxy.Repository.Page", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Prototype.Figures
 {
     public class Circle : IFigure
     {
-        private int _radius;
+        private readonly int _radius;
 
         public Circle(int radius)
         {

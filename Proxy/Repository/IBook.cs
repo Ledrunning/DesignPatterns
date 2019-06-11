@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Proxy
+namespace Proxy.Repository
 {
-    interface IBook : IDisposable
+    internal interface IBook : IDisposable
     {
         Page GetPage(int number);
         void SetData(Page data);

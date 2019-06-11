@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
+using Proxy.Repository;
 
 namespace Proxy
 {
-    class BookStore : IBook
+    internal class BookStore : IBook
     {
-        private PageContext _dbContext;
+        private readonly PageContext _dbContext;
 
         public BookStore()
         {
@@ -19,7 +17,10 @@ namespace Proxy
             _dbContext.Dispose();
         }
 
-        public Page GetPage(int number) => _dbContext.Pages.FirstOrDefault(p => p.Number == number);
+        public Page GetPage(int number)
+        {
+            return _dbContext.Pages.FirstOrDefault(p => p.Number == number);
+        }
 
         public void SetData(Page page)
         {

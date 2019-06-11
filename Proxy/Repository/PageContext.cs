@@ -1,30 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace Proxy
+namespace Proxy.Repository
 {
     /// <summary>
-    /// Необходимо настроить миграцию
-    /// Enable-Migrations -ProjectName "Имя проекта" -StartUpProjectName "Запускаемый проект"
-    /// Add-Migration
-    /// Update-Database
+    ///     Необходимо настроить миграцию
+    ///     Enable-Migrations -ProjectName "Имя проекта" -StartUpProjectName "Запускаемый проект"
+    ///     Add-Migration
+    ///     Update-Database
     /// </summary>
-    class PageContext : DbContext
+    internal class PageContext : DbContext
     {
-        public DbSet<Page> Pages { get; set; }
-
-        public PageContext() { }
-
-        // Прописали провайдера и указали адресс БД
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public PageContext()
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\omazinov\Documents\Visual Studio 2017\Projects\DesignPatterns\Proxy\bookDB.mdf"";Integrated Security=True");
         }
 
         public PageContext(DbContextOptions<PageContext> options)
             : base(options)
-        { }
+        {
+        }
+
+        public DbSet<Page> Pages { get; set; }
+
+        // Прописали провайдера и указали адресс БД
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            // строка подключения к БД
+            optionsBuilder.UseSqlServer(
+                @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\VS_Projects_Examples\StudyProjects\DesignPatterns\Proxy\bookDB.mdf;Integrated Security=True");
+        }
     }
 }

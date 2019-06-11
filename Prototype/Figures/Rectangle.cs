@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Prototype.Figures
 {
     public class Rectangle : IFigure
     {
-        private int _width;
-        private int _height;
+        private readonly int _height;
+        private readonly int _width;
 
         public Rectangle(int width, int height)
         {
