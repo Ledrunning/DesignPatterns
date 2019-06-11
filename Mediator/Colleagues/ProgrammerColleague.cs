@@ -10,7 +10,7 @@ namespace Mediator.Colleagues
 
         public override void Notify(string message)
         {
-            Console.WriteLine($"Сщщбщение программисту: {message}");
+            Console.WriteLine($"Сощбщение программисту: {message}");
         }
     }
 }
