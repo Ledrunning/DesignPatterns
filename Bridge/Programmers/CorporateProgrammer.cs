@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Bridge
+namespace Bridge.Programmers
 {
-    class CorporateProgrammer : Programmer
+    internal class CorporateProgrammer : Programmer
     {
         public CorporateProgrammer(ILanguage language) : base(language)
         {

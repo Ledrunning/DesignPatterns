@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Builder.Ingredients
+﻿namespace Builder.Ingredients
 {
-	// Соль 
-	class Salt
-	{
-		// можно расширять.
-	}
+    /// <summary>
+    ///     Соль
+    /// </summary>
+    internal class Salt
+    {
+        // можно расширять.
+    }
 }

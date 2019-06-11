@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Abstract_Factory.Weapons
 {
-    // Класс вида оружия - арбалет
-    class Arbalet : Weapon
+    /// <summary>
+    ///     Класс вида оружия - арбалет
+    /// </summary>
+    internal class Arbalet : Weapon
     {
         public override void Hit()
         {

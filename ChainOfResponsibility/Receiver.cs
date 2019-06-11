@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ChainOfResponsibility
+﻿namespace ChainOfResponsibility
 {
     public class Receiver
     {
+        public Receiver(bool bankTransfer, bool moneyTransfer, bool payPalTransfer)
+        {
+            BankTransfer = bankTransfer;
+            MoneyTransfer = moneyTransfer;
+            PayPalTransfer = payPalTransfer;
+        }
+
         // Банковские переводы
         public bool BankTransfer { get; set; }
 
@@ -14,14 +17,5 @@ namespace ChainOfResponsibility
 
         // Перевод через PayPal
         public bool PayPalTransfer { get; set; }
-
-        public Receiver(bool bankTransfer, bool moneyTransfer, bool payPalTransfer)
-        {
-            BankTransfer = bankTransfer;
-            MoneyTransfer = moneyTransfer;
-            PayPalTransfer = payPalTransfer;
-        }
     }
-
-
 }

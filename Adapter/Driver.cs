@@ -1,12 +1,8 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Adapter.Interfaces;
+﻿using Adapter.Interfaces;
 
 namespace Adapter
 {
-    class Driver
+    internal class Driver
     {
         public void Travel(ITransport transport)
         {

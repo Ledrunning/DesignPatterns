@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Adapter.Interfaces;
+﻿using Adapter.Interfaces;
 
 namespace Adapter
 {
-    class CamelToTransportAdapter : ITransport
+    internal class CamelToTransportAdapter : ITransport
     {
-        private Camel _camel;
+        private readonly Camel _camel;
 
         public CamelToTransportAdapter(Camel camel)
         {

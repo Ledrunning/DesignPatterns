@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Abstract_Factory.Movements
+﻿namespace Abstract_Factory.Movements
 {
-    // Абстрактный класс движени
-    abstract class Movement
+    /// <summary>
+    ///     Абстрактный класс движени
+    /// </summary>
+    internal abstract class Movement
     {
         public abstract void Move();
     }

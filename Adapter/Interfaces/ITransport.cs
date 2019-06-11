@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Adapter.Interfaces
+﻿namespace Adapter.Interfaces
 {
+    /// <summary>
+    ///     Интерфейс транспорт
+    /// </summary>
     public interface ITransport
     {
         void Drive();

@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Abstract_Factory.Factories;
+﻿using Abstract_Factory.Factories;
 using Abstract_Factory.Movements;
 using Abstract_Factory.Weapons;
 
 namespace Abstract_Factory
 {
-    // Основной класс Героя
-    class Hero
+    /// <summary>
+    ///     Основной класс Героя
+    /// </summary>
+    internal class Hero
     {
-        private Weapon _weapon;
-        private Movement _movement;
+        private readonly Movement _movement;
+        private readonly Weapon _weapon;
 
         //  В конструктор передаем фабрику героев
         public Hero(HeroFactory factory)

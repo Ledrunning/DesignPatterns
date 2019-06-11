@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Bridge
+namespace Bridge.Languages
 {
     public class CSharpLanguage : ILanguage
     {

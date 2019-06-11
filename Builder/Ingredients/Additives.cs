@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Builder.Ingredients
+﻿namespace Builder.Ingredients
 {
-	// Пищевые добавки
-	class Additives
-	{
-		public string Name { get; set; }
-	}
+    /// <summary>
+    ///     Пищевые добавки
+    /// </summary>
+    internal class Additives
+    {
+        public string Name { get; set; }
+    }
 }

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Adapter.Interfaces
+﻿namespace Adapter.Interfaces
 {
-    interface IAnimal
+    /// <summary>
+    ///     Интерфейс - животное
+    /// </summary>
+    internal interface IAnimal
     {
         void Move();
     }

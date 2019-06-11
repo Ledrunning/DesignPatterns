@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Abstract_Factory.Movements
 {
-    // Класс движения полета
-    class FlyMovement : Movement
+    /// <summary>
+    ///     Класс движения полета
+    /// </summary>
+    internal class FlyMovement : Movement
     {
         public override void Move()
         {

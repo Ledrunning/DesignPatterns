@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Bridge
+﻿namespace Bridge.Programmers
 {
-    abstract class Programmer
+    internal abstract class Programmer
     {
         protected ILanguage language;
-
-        public ILanguage Language
-        {
-            set { language = value; }
-        }
 
         public Programmer(ILanguage language)
         {
             this.language = language;
+        }
+
+        public ILanguage Language
+        {
+            set => language = value;
         }
 
         public virtual void DoWork()
@@ -25,6 +21,5 @@ namespace Bridge
         }
 
         public abstract void EarnMoney();
-
     }
 }
