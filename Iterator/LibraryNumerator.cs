@@ -1,22 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Iterator.Interfaces;
 
 namespace Iterator
 {
-    class LibraryNumerator : IBookIterator
+    internal class LibraryNumerator : IBookIterator
     {
-        private IBookNumerable _aggregate;
-        private int _index = 0;
+        private readonly IBookNumerable _aggregate;
+        private int _index;
 
         public LibraryNumerator(IBookNumerable bookNumerable)
         {
             _aggregate = bookNumerable;
         }
 
-        public bool HasNext() => _index < _aggregate.Count;
+        public bool HasNext()
+        {
+            return _index < _aggregate.Count;
+        }
 
-        public Book Next() => _aggregate[_index++];
-
+        public Book Next()
+        {
+            return _aggregate[_index++];
+        }
     }
 }

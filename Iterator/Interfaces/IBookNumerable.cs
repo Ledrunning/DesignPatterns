@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Iterator
+﻿namespace Iterator.Interfaces
 {
     public interface IBookNumerable
     {
-        IBookIterator CreateNumerator();
         int Count { get; }
         Book this[int index] { get; }
+        IBookIterator CreateNumerator();
     }
-
 }

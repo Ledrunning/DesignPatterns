@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Interpreter
+﻿namespace Interpreter
 {
     public interface IExpression
     {

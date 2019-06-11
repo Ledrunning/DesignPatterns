@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FactoryMethod.Houses;
+﻿using FactoryMethod.Houses;
 
 namespace FactoryMethod.Developers
 {
-    class WoodDeveloper : Developer
+    internal class WoodDeveloper : Developer
     {
         public WoodDeveloper(string name) : base(name)
         {

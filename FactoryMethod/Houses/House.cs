@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FactoryMethod.Houses
+﻿namespace FactoryMethod.Houses
 {
-    abstract class House
+    internal abstract class House
     {
         // Можно расширять
     }

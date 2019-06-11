@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Interpreter
+﻿namespace Interpreter
 {
-    class NumberExpression : IExpression
+    internal class NumberExpression : IExpression
     {
-        private string _name;
+        private readonly string _name;
 
         public NumberExpression(string variableName)
         {

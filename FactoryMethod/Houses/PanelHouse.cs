@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FactoryMethod.Houses
 {
-    // Панельный дом
-    class PanelHouse : House
+    /// <summary>
+    ///     Панельный дом
+    /// </summary>
+    internal class PanelHouse : House
     {
         public PanelHouse()
         {

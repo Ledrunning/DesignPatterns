@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Facade
+﻿namespace Facade
 {
-    class Programmer
+    internal class Programmer
     {
         public void CreateApplication(VisualStudioFacade facade)
         {

@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Flyweight
 {
     public class HouseFactory
     {
-        Dictionary<string, House> houses = new Dictionary<string, House>();
+        private readonly Dictionary<string, House> houses = new Dictionary<string, House>();
 
         public HouseFactory()
         {

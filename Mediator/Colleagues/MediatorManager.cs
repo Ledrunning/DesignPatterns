@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Mediator
+﻿namespace Mediator.Colleagues
 {
-    class MediatorManager : Mediator
+    internal class MediatorManager : Mediator
     {
         public Colleague Customer { get; set; }
         public Colleague Programmer { get; set; }
@@ -14,15 +10,15 @@ namespace Mediator
         {
             // Если отправитель - заказчик, значит есть новый заказ
             // отправляем сообщение программисту - выполнить заказ
-            if(Customer == colleague)
+            if (Customer == colleague)
                 Programmer.Notify(message);
             // Если отправитель - программист, то можно приступать к тестированию
             // отправляем сообщение тестеру
-            else if(Programmer == colleague)
+            else if (Programmer == colleague)
                 Tester.Notify(message);
             // Если отправитель - тест, значит продукт готов
             // отправляем сообщение заказчику
-            else if(Tester == colleague)
+            else if (Tester == colleague)
                 Customer.Notify(message);
         }
     }

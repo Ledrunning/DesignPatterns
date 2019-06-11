@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Flyweight
 {
@@ -13,7 +11,8 @@ namespace Flyweight
 
         public override void Build(double longtitude, double latitude)
         {
-            Console.WriteLine($"Построен панельный дом из 16 этажей; координаты: {latitude} широты и {longtitude} долготы");
+            Console.WriteLine(
+                $"Построен панельный дом из 16 этажей; координаты: {latitude} широты и {longtitude} долготы");
         }
     }
 }

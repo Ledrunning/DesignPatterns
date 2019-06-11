@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Command
+namespace Command.Microwave
 {
     public class Microwave
     {
@@ -19,6 +17,5 @@ namespace Command
         {
             Console.WriteLine("Еда подогрета");
         }
-
     }
 }

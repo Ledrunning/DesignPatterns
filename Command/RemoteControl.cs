@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Command
+﻿namespace Command
 {
-    // Invoker - инициализатор
-    class RemoteControl
+    /// <summary>
+    ///     Класс Invoker - инициализатор
+    /// </summary>
+    internal class RemoteControl
     {
         private ICommand _iCommand;
-
-        public RemoteControl()
-        {
-
-        }
 
         public void SetCommand(ICommand command)
         {

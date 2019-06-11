@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Observer.Stocks
+﻿namespace Observer.Stocks
 {
-    class StockInfo
+    internal class StockInfo
     {
         public int USD { get; set; }
         public int Euro { get; set; }

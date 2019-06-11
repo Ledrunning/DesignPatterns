@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Command
+﻿namespace Command.Microwave
 {
-    class MicrowaveCommand : ICommand
+    internal class MicrowaveCommand : ICommand
     {
-        private Microwave _microwave;
-        private int _time;
+        private readonly Microwave _microwave;
+        private readonly int _time;
 
         public MicrowaveCommand(Microwave m, int t)
         {

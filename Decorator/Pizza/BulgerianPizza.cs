@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Decorator
+﻿namespace Decorator.Pizza
 {
-    class BulgerianPizza : Pizza
+    internal class BulgerianPizza : AbstractPizza.Pizza
     {
         public BulgerianPizza() : base("Болгарская пицца")
         {
-
         }
 
-        public override int GetCost() => 8;
-
+        public override int GetCost()
+        {
+            return 8;
+        }
     }
 }

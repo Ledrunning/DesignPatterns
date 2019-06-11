@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Decorator.AbstractPizza;
 
-namespace Decorator
+namespace Decorator.Pizza
 {
     public class CheesePizza : PizzaDecorator
     {
-        public CheesePizza(Pizza p)
+        public CheesePizza(AbstractPizza.Pizza p)
             : base(p.Name + ", с сыром", p)
-        { }
+        {
+        }
 
-        public override int GetCost() => pizza.GetCost() + 5;
-        
+        public override int GetCost()
+        {
+            return pizza.GetCost() + 5;
+        }
     }
 }

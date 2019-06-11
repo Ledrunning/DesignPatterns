@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Mediator
+namespace Mediator.Colleagues
 {
-    class ProgrammerColleague : Colleague
+    internal class ProgrammerColleague : Colleague
     {
         public ProgrammerColleague(Mediator mediator) : base(mediator)
         {
-
         }
 
         public override void Notify(string message)

@@ -1,22 +1,20 @@
 ﻿using System;
 using System.Threading;
 
-//TODO доделай сиглтон!!!
 namespace MultithreadSingleton
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            (new Thread(() =>
+            new Thread(() =>
             {
-                Computer comp2 = new Computer();
+                var comp2 = new Computer();
                 comp2.Os = OpSystem.GetInstance("Windows 10");
                 Console.WriteLine(comp2.Os.Name);
+            }).Start();
 
-            })).Start();
-
-            Computer comp = new Computer();
+            var comp = new Computer();
             comp.Launch("Windows 8.1");
             Console.WriteLine(comp.Os.Name);
 
@@ -24,7 +22,7 @@ namespace MultithreadSingleton
         }
 
         //
-        class Computer
+        private class Computer
         {
             public OpSystem Os { get; set; }
 
@@ -34,34 +32,31 @@ namespace MultithreadSingleton
             }
         }
 
-        class OpSystem
+        private class OpSystem
         {
             private static OpSystem instance;
 
-            public string Name { get; private set; }
-
-            private static object syncRoot = new Object();
+            private static readonly object syncRoot = new object();
 
             protected OpSystem(string name)
             {
-                this.Name = name;
+                Name = name;
             }
 
+            public string Name { get; }
+
             /// <summary>
-            /// Добавили блокировку для потоков для потокобезопасной реализации
+            ///     Добавили блокировку для потоков для потокобезопасной реализации
             /// </summary>
             /// <param name="name"></param>
             /// <returns></returns>
             public static OpSystem GetInstance(string name)
             {
                 if (instance == null)
-                {
                     lock (syncRoot)
                     {
                         instance = new OpSystem(name);
                     }
-                    
-                }
 
                 return instance;
             }

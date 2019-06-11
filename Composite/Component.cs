@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Composite
 {
@@ -15,12 +13,10 @@ namespace Composite
 
         public virtual void Add(Component component)
         {
-
         }
 
         public virtual void Remove(Component component)
         {
-
         }
 
         public virtual void Print()

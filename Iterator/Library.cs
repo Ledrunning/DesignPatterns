@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Iterator.Interfaces;
 
 namespace Iterator
 {
-    class Library : IBookNumerable
+    internal class Library : IBookNumerable
     {
-        private Book[] books;
+        private readonly Book[] books;
 
         public Library()
         {
-            books = new Book[]
+            books = new[]
             {
                 new Book {Name = "Война и мир"},
                 new Book {Name = "Отцы и дети"},
@@ -18,10 +16,13 @@ namespace Iterator
             };
         }
 
-        public IBookIterator CreateNumerator() => new LibraryNumerator(this);
+        public int Count => books.Length;
 
-        public int Count { get => books.Length; }
+        public Book this[int index] => books[index];
 
-        public Book this[int index] { get => books[index]; }
+        public IBookIterator CreateNumerator()
+        {
+            return new LibraryNumerator(this);
+        }
     }
 }

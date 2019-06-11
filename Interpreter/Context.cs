@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Interpreter
 {
     public class Context
     {
-        private Dictionary<string, int> _variables;
+        private readonly Dictionary<string, int> _variables;
 
         public Context()
         {
@@ -23,7 +21,7 @@ namespace Interpreter
         {
             if (_variables.ContainsKey(name))
                 _variables[name] = value;
-            else 
+            else
                 _variables.Add(name, value);
         }
     }

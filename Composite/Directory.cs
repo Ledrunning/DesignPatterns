@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Composite
 {
-    class Directory : Component
+    internal class Directory : Component
     {
-        private List<Component> components = new List<Component>();
+        private readonly List<Component> components = new List<Component>();
 
         public Directory(string name) : base(name)
         {
-
         }
 
         public override void Add(Component component)
@@ -27,7 +25,7 @@ namespace Composite
         {
             Console.WriteLine("Узел " + name);
             Console.WriteLine("Подузлы:");
-            for (int i = 0; i < components.Count; i++)
+            for (var i = 0; i < components.Count; i++)
             {
                 components[i].Print();
             }

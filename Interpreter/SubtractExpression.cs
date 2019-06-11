@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Interpreter
+﻿namespace Interpreter
 {
-    class SubtractExpression : IExpression
+    internal class SubtractExpression : IExpression
     {
-        private IExpression _leftExpression;
-        private IExpression _rightExpression;
+        private readonly IExpression _leftExpression;
+        private readonly IExpression _rightExpression;
 
         public SubtractExpression(IExpression left, IExpression right)
         {

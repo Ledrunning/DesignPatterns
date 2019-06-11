@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Memento
 {
     /// <summary>
-    /// Originator
+    ///     Originator
     /// </summary>
     public class Hero
     {
-        private int _patrons = 10;
         private int _lives = 5;
+        private int _patrons = 10;
 
         public void Shoot()
         {
@@ -19,9 +17,10 @@ namespace Memento
                 _patrons--;
                 Console.WriteLine($"Производим выстрел. Осталось {_patrons} патронов");
             }
-            else 
+            else
+            {
                 Console.WriteLine("Патронов больше нет");
-                
+            }
         }
 
         // Сохранение состояния

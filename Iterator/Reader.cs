@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Iterator
 {
-    class Reader
+    internal class Reader
     {
         public void SeeBooks(Library library)
         {
-            IBookIterator iterator = library.CreateNumerator();
+            var iterator = library.CreateNumerator();
 
             while (iterator.HasNext())
             {
-                Book book = iterator.Next();
+                var book = iterator.Next();
                 Console.WriteLine(book.Name);
             }
-
         }
     }
 }

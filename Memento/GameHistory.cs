@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Memento
 {
     /// <summary>
-    /// Caretaker
+    ///     Caretaker
     /// </summary>
     public class GameHistory
     {
-        public Stack<HeroMemento> History { get; private set; }
-
         public GameHistory()
         {
             History = new Stack<HeroMemento>();
         }
+
+        public Stack<HeroMemento> History { get; }
     }
 }

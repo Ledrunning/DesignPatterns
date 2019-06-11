@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FactoryMethod.Houses
 {
-    // Деревянный дом
-    class WoodHouse : House
+    /// <summary>
+    ///     Деревянный дом
+    /// </summary>
+    internal class WoodHouse : House
     {
         public WoodHouse()
         {

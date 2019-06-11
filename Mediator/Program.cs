@@ -1,22 +1,25 @@
 ﻿using System;
+using Mediator.Colleagues;
 
 namespace Mediator
 {
     /// <summary>
-    /// Паттерн Посредник (Mediator) представляет такой шаблон проектирования, который обеспечивает взаимодействие множества объектов без необходимости ссылаться друг на друга.
-    /// Тем самым достигается слабосвязанность взаимодействующих объектов.
-    /// Когда используется паттерн Посредник?
-    /// Когда имеется множество взаимосвязаных объектов, связи между которыми сложны и запутаны.
-    /// Когда необходимо повторно использовать объект, однако повторное использование затруднено в силу сильных связей с другими объектами.
+    ///     Паттерн Посредник (Mediator) представляет такой шаблон проектирования, который обеспечивает взаимодействие
+    ///     множества объектов без необходимости ссылаться друг на друга.
+    ///     Тем самым достигается слабосвязанность взаимодействующих объектов.
+    ///     Когда используется паттерн Посредник?
+    ///     Когда имеется множество взаимосвязаных объектов, связи между которыми сложны и запутаны.
+    ///     Когда необходимо повторно использовать объект, однако повторное использование затруднено в силу сильных связей с
+    ///     другими объектами.
     /// </summary>
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Title = "Mediator";
 
-            MediatorManager mediator = new MediatorManager();
+            var mediator = new MediatorManager();
             Colleague customer = new CustomerColleague(mediator);
             Colleague programmer = new ProgrammerColleague(mediator);
             Colleague tester = new TesterColleague(mediator);

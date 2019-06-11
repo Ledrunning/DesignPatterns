@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
 
 namespace MultithreadSingleton
 {
-    class LazySingleton
+    internal class LazySingleton
     {
-        public string Name { get; private set; }
         private LazySingleton()
         {
-            Name = System.Guid.NewGuid().ToString();
+            Name = Guid.NewGuid().ToString();
         }
+
+        public string Name { get; }
 
         public static LazySingleton GetInstance()
         {

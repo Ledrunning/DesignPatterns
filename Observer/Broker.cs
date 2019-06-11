@@ -1,35 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Observer.Interfaces;
 using Observer.Stocks;
 
 namespace Observer
 {
-    class Broker : IObserver
+    internal class Broker : IObserver
     {
-        public string Name { get; set; }
         private IObservable _stock;
 
         public Broker(string name, IObservable obs)
         {
-            this.Name = name;
+            Name = name;
             _stock = obs;
             _stock.RegisterObserver(this);
         }
 
+        public string Name { get; set; }
+
         public void Update(object obj)
         {
-            StockInfo _stockInfo = (StockInfo) obj;
+            var _stockInfo = (StockInfo) obj;
 
             if (_stockInfo.USD > 30)
-            {
-                Console.WriteLine($"Брокер {this.Name} продает доллары; Курс доллара равен: {_stockInfo.USD}");
-            }
+                Console.WriteLine($"Брокер {Name} продает доллары; Курс доллара равен: {_stockInfo.USD}");
             else
-            {
-                Console.WriteLine($"Брокер {this.Name} покупает доллары; Курс доллара равен: {_stockInfo.USD}");
-            }
+                Console.WriteLine($"Брокер {Name} покупает доллары; Курс доллара равен: {_stockInfo.USD}");
         }
 
         public void StopTrade()

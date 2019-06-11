@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Facade
+﻿namespace Facade
 {
     public class VisualStudioFacade
     {
-        private TextEditor _textEditor;
-        private Compiler _compiler;
-        private CLR _clr;
+        private readonly CLR _clr;
+        private readonly Compiler _compiler;
+        private readonly TextEditor _textEditor;
 
         public VisualStudioFacade(TextEditor txEditor, Compiler compiler, CLR clr)
         {

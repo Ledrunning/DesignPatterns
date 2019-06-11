@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FactoryMethod.Houses;
+﻿using FactoryMethod.Houses;
 
 namespace FactoryMethod.Developers
 {
-    // Строительная компания
-    abstract class Developer
+    /// <summary>
+    ///     Строительная компания
+    /// </summary>
+    internal abstract class Developer
     {
-        public string Name { get; set; }
-
         public Developer(string name)
         {
             Name = name;
         }
+
+        public string Name { get; set; }
 
         public abstract House Create();
     }

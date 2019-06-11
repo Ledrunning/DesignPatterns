@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using Observer.Interfaces;
-
 
 namespace Observer.Stocks
 {
     public class Stock : IObservable
     {
-        private StockInfo _stockInfo;
-        private List<IObserver> _observers;
+        private readonly List<IObserver> _observers;
+        private readonly StockInfo _stockInfo;
 
         public Stock()
         {
@@ -29,15 +27,12 @@ namespace Observer.Stocks
 
         public void NotifyObservers()
         {
-            foreach (var itemObserver in _observers)
-            {
-                itemObserver.Update(_stockInfo);
-            }
+            foreach (var itemObserver in _observers) itemObserver.Update(_stockInfo);
         }
 
         public void Market()
         {
-            Random random = new Random();
+            var random = new Random();
             _stockInfo.USD = random.Next(20, 40);
             _stockInfo.Euro = random.Next(30, 50);
             NotifyObservers();
