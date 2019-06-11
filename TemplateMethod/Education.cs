@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TemplateMethod
 {
-    abstract class Education : Learning
+    internal abstract class Education : Learning
     {
         public abstract void Enter();
         public abstract void Study();

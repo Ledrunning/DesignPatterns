@@ -3,14 +3,14 @@ using State.ObjectStates;
 
 namespace State
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Title = "State";
 
-            Water water = new Water(new LiquidWaterState());
+            var water = new Water(new LiquidWaterState());
             water.Heat();
             water.Frost();
             water.Frost();

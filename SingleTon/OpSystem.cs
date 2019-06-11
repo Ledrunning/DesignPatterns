@@ -1,26 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SingleTon
+﻿namespace SingleTon
 {
-    class OpSystem
+    internal class OpSystem
     {
         private static OpSystem instance;
 
-        public string Name { get; private set; }
-
         protected OpSystem(string name)
         {
-            this.Name = name;
+            Name = name;
         }
+
+        public string Name { get; }
 
         public static OpSystem GetInstance(string name)
         {
-            if (instance == null)
-            {
-                instance = new OpSystem(name);
-            }
+            if (instance == null) instance = new OpSystem(name);
 
             return instance;
         }

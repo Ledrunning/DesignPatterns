@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TemplateMethod
 {
-    class School : Education
+    internal class School : Education
     {
         // Первый класс
         public override void Enter()
@@ -23,6 +21,5 @@ namespace TemplateMethod
         {
             Console.WriteLine("Получаем аттестат о среднем образовании");
         }
-
     }
 }

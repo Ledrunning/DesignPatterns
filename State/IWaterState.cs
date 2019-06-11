@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace State
+﻿namespace State
 {
     public interface IWaterState
     {

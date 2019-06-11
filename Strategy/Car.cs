@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Strategy
+﻿namespace Strategy
 {
-    class Car
+    internal class Car
     {
-        protected int passengers;
         protected string model;
-
-        public IMovable Movable { private get; set; }
+        protected int passengers;
 
         public Car(int num, string model, IMovable move)
         {
@@ -17,6 +11,8 @@ namespace Strategy
             this.model = model;
             Movable = move;
         }
+
+        public IMovable Movable { private get; set; }
 
         public void Move()
         {

@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace State.ObjectStates
 {
-    class GasWaterState : IWaterState
+    internal class GasWaterState : IWaterState
     {
         public void Heat(Water water)
         {

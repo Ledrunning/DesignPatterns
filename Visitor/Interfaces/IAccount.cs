@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Visitor
+namespace Visitor.Interfaces
 {
     public interface IAccount
     {

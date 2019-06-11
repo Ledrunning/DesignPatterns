@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Visitor.Interfaces;
 
 namespace Visitor
 {
@@ -12,7 +10,7 @@ namespace Visitor
 
         public void Accept(IVisitor visitor)
         {
-           visitor.VisitCompanyAccount(this);
+            visitor.VisitCompanyAccount(this);
         }
     }
 }

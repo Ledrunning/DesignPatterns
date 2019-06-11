@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using Visitor.Interfaces;
 
 namespace Visitor
 {
-    class Bank
+    internal class Bank
     {
-        List<IAccount> accounts = new List<IAccount>();
+        private readonly List<IAccount> accounts = new List<IAccount>();
 
         public void Add(IAccount account)
         {
@@ -20,10 +19,7 @@ namespace Visitor
 
         public void Accept(IVisitor visitor)
         {
-            foreach (var account in accounts)
-            {
-                account.Accept(visitor);
-            }
+            foreach (var account in accounts) account.Accept(visitor);
         }
     }
 }

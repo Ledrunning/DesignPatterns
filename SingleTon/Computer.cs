@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SingleTon
+﻿namespace SingleTon
 {
-    class Computer
+    internal class Computer
     {
         public OpSystem Os { get; set; }
 

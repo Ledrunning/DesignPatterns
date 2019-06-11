@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TemplateMethod
 {
-    class University : Education
+    internal class University : Education
     {
         // Поступление в Университет
         public override void Enter()
@@ -28,6 +26,5 @@ namespace TemplateMethod
         {
             Console.WriteLine("Получаем диоплом о высшем образовании");
         }
-
     }
 }

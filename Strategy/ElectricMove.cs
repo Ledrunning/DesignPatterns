@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Strategy
 {
-
-    class ElectricMove : IMovable
+    internal class ElectricMove : IMovable
     {
         public void Move()
         {
