@@ -1,8 +1,8 @@
 # DesignPatterns
 ## Simple examples from metanit.com
-## I collected Classical GOF patterns in general solution. Simple examples from website  metanit.com
+## I collected Classical GOF patterns in the general solution. Simple examples from the website  metanit.com
 
- Code written on C# language using Visual Studio 2017
+ Code is written in C# language using Visual Studio 2017
 
 TO DO: 
 
