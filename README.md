@@ -29,7 +29,7 @@ To run or explore the examples, follow these steps:
 ## Patterns Included
 The repository covers various GOF design patterns, including but not limited to:
 
-Creational Patterns
+- Creational Patterns
 
 Singleton
 Factory Method
