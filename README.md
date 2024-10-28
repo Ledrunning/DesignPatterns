@@ -73,7 +73,4 @@ If you'd like to contribute to this project, follow these steps:
 4. Push your changes to your fork.
 5. Create a pull request to merge your changes into the main repository.
 
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ![](https://habrastorage.org/webt/xa/iz/zr/xaizzrlrbyockc7vdaffc3fm2gw.png)
